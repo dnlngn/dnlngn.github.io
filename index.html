@@ -31,19 +31,18 @@
 <li><noindex><a href="http://example.com">Ссылка, запрещенная для индексации поисковиками</a></noindex></li>
 <li><a href="https://en.wikipedia.org/wiki/Russia"><img src="russia.png" alt="Россия" style="width: 300px;" /></a></li>
 <li>
-      <img src="img2.png" alt="searching" style="width: 705px;" usemap="#map">
+      <img src="img_map.png" alt="gerbs" style="width: 360px;" usemap="#map">
       <map name="map">
-      <area shape="rect" coords="23,22,337,101" href="https://www.yahoo.com/" alt="Yahoo" target="_blank">
-      <area shape="rect" coords="393,26,689,97" href="https://yandex.ru/" alt="Yandex" target="_blank">
-      <area shape="circle" coords="356,175,59" href="https://www.google.ru/" alt="Google" target="_blank">
+      <area shape="rect" coords="29,17,179,123" href="https://en.wikipedia.org/wiki/Krasnodar" alt="Krasnodar">
+      <area shape="circle" coords="276,71,63" href="https://en.wikipedia.org/wiki/Sakha" alt="Sakha">
       </map>
 </li>
-<li><a href="Page.html">Относительная на страницу в текущем каталоге</a></li>
-<li><a href="about/Page.html">Относительная на страницу в каталоге about</a></li>
-<li><a href="../Page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
-<li><a href="../../Page.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
-<li><a href="/">Сокращённая на главную</a></li>
-<li><a href="/info">Сокращённая на внутреннюю</a></li>
+<li><a href="Page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+<li><a href="about/Page.html">Относительная ссылка на страницу в каталоге about</a></li>
+<li><a href="../Page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+<li><a href="../../Page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+<li><a href="/">Сокращённая ссылка на главную</a></li>
+<li><a href="/about">Сокращённая ссылка на внутреннюю</a></li>
 </ol>
   
 <p id="#mark">Фрагмент</p>
@@ -56,13 +55,13 @@
       <label>
         Имя:<br />
         <input name="field-name-1"
-          value="" />
+          value="имя" />
       </label><br />
 
       <label>
         email:<br />
         <input name="field-email"
-          value=""
+          value="email@example.com"
           type="email" />
       </label><br />
 
@@ -104,7 +103,7 @@
 
       <label>
         Биография:<br />
-        <textarea name="field-name-2"></textarea>
+        <textarea name="field-name-2">о себе</textarea>
       </label><br />
 
       <label><input type="checkbox"
