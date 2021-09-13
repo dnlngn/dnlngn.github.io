@@ -1,8 +1,21 @@
 <!DOCTYPE html>
+
+<html lang="ru">
+
 <head>
 <title>Задание 1</title>
 </head>
 
+<body>
 
+<ol>
+<il><a href="http://example.com">Ссылка на главную страницу сайта example.com</a></il>
+<il><a href="https://example.com">Ссылка на главную страницу сайта example.com в протоколе https</a></il>
+<li><a href="ftp://example.ru/examp/file.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
+<li><a href="ftp://login:password@example.ru/examp/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+
+</ol>
+
+</body>
 
 </html>
