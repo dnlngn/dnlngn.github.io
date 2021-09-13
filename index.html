@@ -7,14 +7,113 @@
 </head>
 
 <body>
+  
+<h1 id="m1">Начало</h1>
 
+<h2 id="m2">Список ссылок</h2>
 <ol>
-<il><a href="http://example.com">Ссылка на главную страницу сайта example.com</a></il>
-<il><a href="https://example.com">Ссылка на главную страницу сайта example.com в протоколе https</a></il>
+<li><a href="http://example.com">Ссылка на главную страницу сайта example.com</a></li>
+<li><a href="https://example.com">Ссылка на главную страницу сайта example.com в протоколе https</a></li>
 <li><a href="ftp://example.ru/examp/file.txt">Ссылка на файл на сервере FTP без авторизации</a></li>
 <li><a href="ftp://login:password@example.ru/examp/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
-
+<li><a href="http://example.com#mark">Cсылка на фрагмент страницы некоторого сайта</a></li>
+<li><a href="#mark">Ссылка на фрагмент текущей страницы</a></li>
+<li><a href="http://example.com?color=white&size=M">Ссылка с двумя параметрами в URL</a></li>
+<li>
+  <ul>
+    <li><a href="#m1" title="начало">Начало</a></li>
+    <li><a href="#m2" title="список">Список ссылок</a></li>
+    <li><a href="#m3" title="форма">Форма</a></li>
+  </ul>
+<li><a>Ссылка без href</a></li>
+<li><a href="">Ссылка с пустым href</a></li>
+<li><a href="http://example.com" rel="nofollow">Ссылка, по которой запрещён переход поисковиками</a></li>
+<li><noindex><a href="http://example.com">Ссылка, запрещенная для индексации поисковиками</a></noindex></li>
+<li><a href="https://en.wikipedia.org/wiki/Russia"><img src="russia.png" alt="Россия" style="width: 300px;" /></a></li>
+<li>
+      <img src="img2.png" alt="searching" style="width: 705px;" usemap="#map">
+      <map name="map">
+      <area shape="rect" coords="23,22,337,101" href="https://www.yahoo.com/" alt="Yahoo" target="_blank">
+      <area shape="rect" coords="393,26,689,97" href="https://yandex.ru/" alt="Yandex" target="_blank">
+      <area shape="circle" coords="356,175,59" href="https://www.google.ru/" alt="Google" target="_blank">
+      </map>
+</li>
+<li><a href="Page.html">Относительная на страницу в текущем каталоге</a></li>
+<li><a href="about/Page.html">Относительная на страницу в каталоге about</a></li>
+<li><a href="../Page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+<li><a href="../../Page.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+<li><a href="/">Сокращённая на главную</a></li>
+<li><a href="/info">Сокращённая на внутреннюю</a></li>
 </ol>
+  
+<p id="#mark">Фрагмент</p>
+  
+<h2 id="#m3">Форма</h2>
+  
+<form action="/"
+      method="POST">
+
+      <label>
+        Имя:<br />
+        <input name="field-name-1"
+          value="" />
+      </label><br />
+
+      <label>
+        email:<br />
+        <input name="field-email"
+          value=""
+          type="email" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+      
+      Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение1" />
+        Женский</label>
+      
+      Количество конечностей:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-2" value="Значение1" />
+        4</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        8</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        Другое</label><br />
+      
+      <label>
+        Сверхспособность:<br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1" selected="selected">Бессмертие</option>
+          <option value="Значение2">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br />
+
+      <label><input type="checkbox"
+        name="check-1" />
+        С контрактом ознакомлен(а)</label><br />
+
+      <input type="submit" value="Отправить" />
+    </form>
+  
 
 </body>
 
