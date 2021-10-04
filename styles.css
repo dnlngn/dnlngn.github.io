@@ -43,7 +43,7 @@ table {
 }
 
 th, td {
-  width:75px;
+  width:150px;
 }
 
 table tr:nth-child(odd) {
