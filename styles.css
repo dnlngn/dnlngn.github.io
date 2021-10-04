@@ -36,7 +36,10 @@ nav {
 
 table {
   border:1px;
-  wigth:300px;
+}
+
+th, td {
+  wigth:75px;
 }
 
 table tr:nth-child(odd) {
