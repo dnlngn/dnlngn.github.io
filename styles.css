@@ -29,6 +29,10 @@ header {
   padding:10px;
 }
 
+table {
+  wigth:200px;
+}
+
 table tr:nth-child(odd) {
   background-color: #BDB76B;
 }
