@@ -4,8 +4,7 @@ header {
 }
 
 .h1 {
-  max-width: 100%;
-  align-items: center;
+  max-width: 960px;
   padding: 10px;
   margin: 0 auto;
 }
@@ -16,9 +15,15 @@ header {
 }
 
 #logotip {
+  float: left;
   height: 90px;
   width: 90px;
   margin-right: 10px;
+}
+
+nav {
+  background-color:#7FFFD4;
+  padding: 10px;
 }
 
 .main {
