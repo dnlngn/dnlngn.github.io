@@ -1,5 +1,5 @@
 header {
-  height: 120px;
+  height: 115px;
   background-color:#C0C0C0;
 }
 
@@ -16,9 +16,9 @@ header {
 }
 
 #logotip {
-  padding: 10px;
   height: 90px;
   width: 90px;
+  margin-right: 10px;
 }
 
 .main {
@@ -30,7 +30,8 @@ header {
 }
 
 table {
-  wigth:200px;
+  border:1px;
+  wigth:300px;
 }
 
 table tr:nth-child(odd) {
