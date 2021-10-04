@@ -1,0 +1,45 @@
+header {
+  height: 120px;
+  background-color:#F5F5DC;
+}
+
+.h1 {
+  max-wight: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.h2 {
+  background-color:#7FFFD4;
+  padding: 10px;
+}
+
+#logotip {
+  float: left;
+  height: 110px;
+  wight: 110px;
+}
+
+.main {
+  max-width:960px;
+  background-color:#F5F5DC;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+}
+
+table tr:nth-child(odd) {
+	background-color: #BDB76B;
+}
+
+table tr:nth-child(even) {
+	background-color: #F0E68C;
+}
+
+footer {
+  height:60px;
+  max-width:100%;
+  background-color:#7FFFD4;
+  margin-top:20px;
+  padding: 10px;
+}
