@@ -4,7 +4,7 @@ header {
 }
 
 .h1 {
-  max-wight: 100%;
+  max-width: 100%;
   padding: 10px;
   margin: 0 auto;
 }
@@ -15,9 +15,10 @@ header {
 }
 
 #logotip {
-  float: left;
-  height: 110px;
-  wight: 110px;
+  margin-left:200px;
+  padding: 10px;
+  height: 90px;
+  width: 90px;
 }
 
 .main {
@@ -29,11 +30,11 @@ header {
 }
 
 table tr:nth-child(odd) {
-	background-color: #BDB76B;
+  background-color: #BDB76B;
 }
 
 table tr:nth-child(even) {
-	background-color: #F0E68C;
+  background-color: #F0E68C;
 }
 
 footer {
