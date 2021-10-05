@@ -56,6 +56,8 @@ nav {
 }
 
 .table {
+  display: flex;
+  flex-direction: row;
   max-width:960px;
   background-color:#C0C0C0;
   margin: 0 auto;
