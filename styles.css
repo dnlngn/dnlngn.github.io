@@ -47,11 +47,12 @@ nav {
   margin: 0 auto;
   margin-top:20px;
   padding:30px 10px;
-  align-items:center;
 }
 
-th, td {
-  width:150px;
+table {
+  align:center;
+  border:2px;
+  width:400px;
 }
 
 table tr:nth-child(odd) {
