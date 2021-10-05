@@ -50,7 +50,7 @@ nav {
 }
 
 table {
-  align:center;
+  margin: auto;
   border:2px;
   width:400px;
 }
