@@ -50,11 +50,11 @@ nav {
 }
 
 table {
+  border:2px;
   margin: auto;
 }
 
 th, td {
-  border:2px;
   width:100px;
 }
 
