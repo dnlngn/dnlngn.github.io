@@ -51,8 +51,11 @@ nav {
 
 table {
   margin: auto;
+}
+
+th, td {
   border:2px;
-  width:400px;
+  width:75px;
 }
 
 table tr:nth-child(odd) {
