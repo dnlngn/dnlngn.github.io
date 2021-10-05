@@ -27,18 +27,27 @@ header {
 
 nav {
   max-width:960px;
-  background-color:#7FFFD4;
   margin: 0 auto;
-  margin-top:20px;
-  padding: 10px;
+  padding: 0;
+  background-color:#7FFFD4;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin:0;
+  padding:10px;
+  margin-top: 20px;
+  list-style: none;
 }
 
 .nav_ref {
-  display: inline;
   margin-right:50px;
 }
 
 .main {
+  display: flex;
+  flex-direction: row;
   max-width:960px;
   background-color:#C0C0C0;
   margin: 0 auto;
@@ -72,9 +81,22 @@ table tr:nth-child(even) {
 }
 
 footer {
+  display: flex;
+  flex-direction: row;
   height:40px;
   max-width:100%;
   background-color:#7FFFD4;
   margin-top:20px;
   padding: 10px;
 }
+
+@media screen and (min-device-width:  960px) {
+	#RefsList {
+		order:  0;
+	}
+	#Table {
+		order:  1;
+	}
+	#Form {
+		order:  2;
+	}
