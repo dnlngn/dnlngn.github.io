@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 115px;
+  background-color:#C0C0C0;
+}
+
+.h1 {
+  max-width: 960px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.h2 {
+  background-color:#7FFFD4;
+  padding: 10px;
+}
+
+#logotip {
+  float: left;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+}
+
+nav {
+  max-width:960px;
+  margin: 0 auto;
+  padding: 0;
+  background-color:#7FFFD4;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin:0;
+  padding:10px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.nav_ref {
+  margin-right:50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  max-width:960px;
+  background-color:#C0C0C0;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+}
+
+.table {
+  max-width:960px;
+  background-color:#C0C0C0;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:30px 10px;
+}
+
+table {
+  border:2px;
+  margin: auto;
+}
+
+th, td {
+  width:100px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #BDB76B;
+}
+
+table tr:nth-child(even) {
+  background-color: #F0E68C;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height:40px;
+  max-width:100%;
+  background-color:#7FFFD4;
+  margin-top:20px;
+  padding: 10px;
+}
+
+@media screen and (min-device-width:  960px) {
+	#RefsList {
+		order:  0;
+	}
+	#Table {
+		order:  1;
+	}
+	#Form {
+		order:  2;
+	}
