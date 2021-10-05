@@ -33,6 +33,11 @@ nav {
   padding: 10px;
 }
 
+.nav_ref {
+  display: inline;
+  margin-right:50px;
+}
+
 .main {
   max-width:960px;
   background-color:#C0C0C0;
