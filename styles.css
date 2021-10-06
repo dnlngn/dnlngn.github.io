@@ -27,14 +27,20 @@ header {
 
 nav {
   max-width:960px;
-  background-color:#7FFFD4;
   margin: 0 auto;
-  margin-top:20px;
-  padding: 10px;
+  padding: 0;
+  background-color:#7FFFD4;
+}
+
+.nav {
+  margin:0;
+  padding:10px;
+  margin-top: 20px;
+  list-style: none;
+  display: inline-block;
 }
 
 .nav_ref {
-  display: inline;
   margin-right:50px;
 }
 
