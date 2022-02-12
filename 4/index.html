@@ -43,8 +43,9 @@
  </div>
 </nav>
 
-<div class="main">
-
+<div class="container-fluid">
+ <div class="row d-flex md-mw-75">
+  <div id="content" class="col-12 mt-2 p-3">
 <h2 id="m2">Список ссылок</h2>
 <ol>
 <li><a href="http://example.com">Ссылка на главную страницу сайта example.com</a></li>
@@ -82,44 +83,8 @@
 <p id="mark">Фрагмент</p>
 </div>
  
-<div id="Table">
-<div class="table">
-   <table>
-      <tr>
-        <th>Стоблец 1</th>
-        <th>Столбец 2</th>
-        <th>Столбец 3</th>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>12</td>
-        <td>13</td>
-      </tr>
-      <tr>
-        <td colspan="3">21-23</td>
-      </tr>
-      <tr>
-        <td>31</td>
-        <td>32</td>
-        <td rowspan="2">33-43</td>
-      </tr>
-      <tr>
-        <td>41</td>
-        <td>42</td>
-      </tr>
-      <tr>
-        <td>51</td>
-        <td>52</td>
-        <td>53</td>
-      </tr>
-    </table>
-  </div>
-</div>
- 
-<div id="Form">
-<div class="main">
+<div id="content" class="col-12 mt-2 p-3 order-md-2">
 <h2 id="m3">Форма</h2>
-  
 <form action="/"
       method="POST">
 
@@ -184,9 +149,45 @@
       <input type="submit" value="Отправить" />
     </form>
  </div>
+ 
+<div id="content" class="col-12 mt-2 p-3 order-md-1">
+   <table>
+      <tr>
+        <th>Стоблец 1</th>
+        <th>Столбец 2</th>
+        <th>Столбец 3</th>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td colspan="3">21-23</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>32</td>
+        <td rowspan="2">33-43</td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <td>51</td>
+        <td>52</td>
+        <td>53</td>
+      </tr>
+    </table>
+  </div>
+</div>
 </div>
  
  <footer>
+  <div class="container-fluid">
+  <div class="row d-flex m-2">
+  <div class="col p-2">
    (с) Гребёнкин Владислав 2021
  </footer>
  
