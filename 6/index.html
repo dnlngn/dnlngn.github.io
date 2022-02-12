@@ -43,7 +43,37 @@
          <div id="answer"></div>
      </p>
     </div>
-  </div>
+  
+  
+  <div id="cont" class="col-12 mt-3 pt-3 pb-2">
+        <label>
+          Товар:
+          <select name="product_select">
+             <option value="0" disabled selected></option>
+             <option value="1">Пицца пепперони</option>
+             <option value="2">Картошка</option>
+             <option value="3">Бургер</option>
+          </select>
+        </label>
+        <label>
+           Введите количество товара:
+           <input type="number" name="colvo" min = "1">
+        </label>
+        <div id = "volume">
+          <label><input type="radio" name="volume" value="60">Маленькая</label>
+          <label><input type="radio" name="volume" value="90">Средняя</label>
+          <label><label><input type="radio" name="volume" value="150">Большая</label>
+        </div>
+        <div id="rolls">
+          <label><input type="checkbox" name="addition" value = "60" >Соус</label>
+          <label><input type="checkbox" name="addition" value = "45" >Сыр</label>
+          <label><input type="checkbox" name="addition" value = "50" >Лук</label>
+        </div>
+        <div>
+           Итоговая стоимость: <div id="result"></div>
+        </div>
+      </div>
+   </div>
 </div>
   
 <script src="jsscript.js"></script>
