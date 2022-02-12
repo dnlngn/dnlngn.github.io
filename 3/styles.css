@@ -59,10 +59,6 @@ nav {
   padding:10px;
 }
 
-#Table {
-  order: 2;	
-}
-
 .table {
   display: flex;
   flex-direction: column;
@@ -71,6 +67,7 @@ nav {
   margin: 0 auto;
   margin-top:20px;
   padding:30px 10px;
+  order: 2;
 }
 
 table {
@@ -90,8 +87,15 @@ table tr:nth-child(even) {
   background-color: #F0E68C;
 }
 
-#Form {
-  order: 1;	
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width:960px;
+  background-color:#C0C0C0;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+  order: 1;
 }
 
 footer {
@@ -105,10 +109,10 @@ footer {
 }
 
 @media (min-width: 960px) {
-	#Table {
+	.table {
 		order:  1;
 	}
-	#Form {
+	.form {
 		order:  2;
 	}
 	.nav {
