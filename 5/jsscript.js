@@ -7,8 +7,11 @@ function calc() {
     } else {
         a.innerHTML = "Некорректные данные";
     }
+    return false;
 }
-window.addEventListener("DOMContentLoaded", function(event) {
+
+window.addEventListener('DOMContentLoaded', function(event) {
+    console.log("DOM fully loaded and parsed");
     let b = document.getElementById("result");
     b.addEventListener("click", calc);
 });
