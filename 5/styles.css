@@ -1,6 +1,6 @@
 header {
   background-color:#C0C0C0;
-  border-width: 1px;
+  border: 1px solid #000000;
 }
 
 h1 {
@@ -8,5 +8,5 @@ h1 {
 }
 
 #cont {
-  border-width: 1px;
+  border-width: 1px solid #000000;
 }
