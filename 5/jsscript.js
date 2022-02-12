@@ -1,17 +1,13 @@
-function click1(){
-    let t = /^\d+$/;
-    let f1 = document.getElementById("field1");
-    let f2 = document.getElementById("field2");
-    let r = document.getElementById("result");
-    if(t.test(f1.value) && t.test(f2.value)){
-      r.innerHTML = parseInt(f1.value) * parseInt(f2.value);
+function calc() {
+    let price = document.getElementsByName("price");
+    let quan = document.getElementsByName("quantity");
+    if ((/^[1-9][0-9]*$/).test(price[0].value) && (/^[1-9][0-9]*$/).test(quan[0].value)) {
+        alert("Итоговая цена = " + parseInt(price[0].value) * parseInt(quan[0].value));
     } else {
-      r.innerHTML = "Введены некорректные данные!";
+        alert("Введите корректные данные!");
     }
-    return false;
-  }
-
-  window.addEventListener('DOMContentLoaded', function (event) {
-    console.log("DOM fully loaded and parsed");
-    document.getElementById("button1").addEventListener("click", click1);
-  });
+}
+window.addEventListener("DOMContentLoaded", function(event) {
+    let b = document.getElementById("result");
+    b.addEventListener("click", calc);
+});
