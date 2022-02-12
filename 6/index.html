@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+ 
+<header>
+  <div class="container-fluid">
+     <div class="row d-flex text-center">
+      <div class="col pt-2 pb-2">
+        <h1>Задание 6</h1>
+      </div>
+     </div>
+  </div>
+</header>
+ 
+<body>
+ <div class="container-fluid">
+   <div class="row d-flex text-center">
+     <div id="cont" class="col-12 mt-3 pt-3 pb-2">
+      <form>
+        <p>
+            Цена:
+            <input type="text" name ="price"> 
+        </p>
+        <p>
+            Количество: 
+            <input type="text" name ="count">
+        </p>
+        <button id = "result" onclick="return calc();">
+            Рассчитать
+        </button>
+        </p>
+      </form>
+     <p>
+         <div id="answer"></div>
+     </p>
+    </div>
+  </div>
+</div>
+  
+<script src="jsscript.js"></script>
+  
+</body>
+</html>
