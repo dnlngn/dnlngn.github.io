@@ -1,52 +1,22 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
 }
 
 header {
-  height: 115px;
   background-color:#C0C0C0;
 }
 
 .h1 {
-  max-width: 960px;
-  padding: 10px;
-  margin: 0 auto;
+  color: white;
 }
 
-.h2 {
-  background-color:#7FFFD4;
-  padding: 10px;
-}
-
-#logotip {
-  float: left;
+header img {
   height: 90px;
   width: 90px;
-  margin-right: 10px;
 }
 
-nav {
-  max-width:960px;
-  margin: 0 auto;
-  padding: 0;
-  background-color:#7FFFD4;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  margin:0;
-  padding:10px;
-  margin-top: 20px;
-  list-style: none;
-}
-
-.nav_ref {
-  margin-right:50px;
+#nav_ref {
+  background-color:#C0C0C0
 }
 
 .main {
