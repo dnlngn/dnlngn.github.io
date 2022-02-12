@@ -1,10 +1,10 @@
 function calc() {
-    let price = document.getElementsByName("price");
-    let quan = document.getElementsByName("count");
-    if ((/^[1-9][0-9]*$/).test(price[0].value) && (/^[1-9][0-9]*$/).test(quan[0].value)) {
-        alert("Итоговая цена = " + parseInt(price[0].value) * parseInt(quan[0].value));
+    let p = document.getElementsByName("price");
+    let c = document.getElementsByName("count");
+    if ((/^[1-9][0-9]*$/).test(p[0].value) && (/^[1-9][0-9]*$/).test(c[0].value)) {
+        alert("Ответ: " + parseInt(p[0].value) * parseInt(c[0].value));
     } else {
-        alert("Введите корректные данные!");
+        alert("Некорректные данные");
     }
 }
 window.addEventListener("DOMContentLoaded", function(event) {
