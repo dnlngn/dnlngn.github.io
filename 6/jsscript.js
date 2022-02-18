@@ -1,7 +1,7 @@
-function calc1() {
+function calc() {
     let p = document.getElementsByName("price");
     let c = document.getElementsByName("count");
-    let a = document.getElementById("answer1");
+    let a = document.getElementById("answer");
     if ((/^[1-9][0-9]*$/).test(p[0].value) && (/^[1-9][0-9]*$/).test(c[0].value)) {
         a.innerHTML = "Ответ: " + parseInt(p[0].value) * parseInt(c[0].value);
     } else {
@@ -29,16 +29,15 @@ function hiden() {
     }
 }
 function calc2() {
-        let t2 = /^\d+$/;
         let prod, count, checkbox, radio, answer;
         let result = 0;
         prod = document.getElementById('prod').value;
-        count = parseInt(document.getElementById('count').value);
+        count = parseInt(document.getElementById('count2').value);
         checkbox = document.getElementsByName('checkbox');
         radio = document.getElementsByName('radio');
         answer = document.getElementById('answer2');
-        if (!t2.test(count) || (count < 0)) {
-            answer.innerHTML = "Введите количество";
+        if (!(/^[1-9][0-9]*$/).test(count) || (count < 0)) {
+            answer.innerHTML = "Некорректное количество";
         } else {
             switch (prod) {
                 case '1':
@@ -64,17 +63,12 @@ function calc2() {
             }
             answer.innerHTML = result + " руб.";
         }
-    } 
-
-
-
-window.addEventListener('DOMContentLoaded', function(event) {
-});
+    }
 
   window.addEventListener('DOMContentLoaded', function (event) {
     console.log("DOM fully loaded and parsed");
     let b = document.getElementById("result");
-    b.addEventListener("click", calc1);
+    b.addEventListener("click", calc);
     document.getElementById("prod").addEventListener("click", hiden);
     document.getElementById("count").addEventListener("change", calc2);
     document.getElementById("prod").addEventListener("change", calc2);
