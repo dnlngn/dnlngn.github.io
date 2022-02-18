@@ -12,8 +12,8 @@ function calc() {
 
 function hiden() {
     let p;
-    p = document.getElementById('prod_type').value;
-    switch (p) {
+    p = document.getElementById('prod_type');
+    switch (p.value) {
         case'1':
             document.getElementById("radio").hidden = true;
             document.getElementById("checkbox").hidden = true;
@@ -29,12 +29,12 @@ function hiden() {
     }
 }
 function calc2() {
-        let p, c, ch, r, a;
+        let p, c, r, ch, a;
         let res = 0;
         p = document.getElementById('prod_type');
         c = document.getElementById('count2');
-        ch = document.getElementsByName('checkbox');
         r = document.getElementsByName('radio');
+        ch = document.getElementsByName('checkbox');
         a = document.getElementById('answer2');
         if (!(/^[1-9][0-9]*$/).test(c.value)) {
             a.innerHTML = "Некорректное количество";
@@ -67,11 +67,10 @@ function calc2() {
 
   window.addEventListener('DOMContentLoaded', function (event) {
     console.log("DOM fully loaded and parsed");
-    let b = document.getElementById("result");
-    b.addEventListener("click", calc);
+    document.getElementById("result").addEventListener("click", calc);
     document.getElementById("prod_type").addEventListener("click", hiden);
+    document.getElementById("prod_type").addEventListener("change", calc2);
     document.getElementById("count2").addEventListener("change", calc2);
-    document.getElementById("prod").addEventListener("change", calc2);
     document.getElementById("rad1").addEventListener("change", calc2);
     document.getElementById("rad2").addEventListener("change", calc2);
     document.getElementById("ch1").addEventListener("change", calc2);
