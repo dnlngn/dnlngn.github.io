@@ -1,7 +1,7 @@
 function calc1() {
     let p = document.getElementsByName("price");
     let c = document.getElementsByName("count");
-    let a = document.getElementById("answer");
+    let a = document.getElementById("answer1");
     if ((/^[1-9][0-9]*$/).test(p[0].value) && (/^[1-9][0-9]*$/).test(c[0].value)) {
         a.innerHTML = "Ответ: " + parseInt(p[0].value) * parseInt(c[0].value);
     } else {
@@ -36,7 +36,7 @@ function calc2() {
         count = parseInt(document.getElementById('count').value);
         checkbox = document.getElementsByName('checkbox');
         radio = document.getElementsByName('radio');
-        answer = document.getElementById('answer');
+        answer = document.getElementById('answer2');
         if (!t2.test(count) || (count < 0)) {
             answer.innerHTML = "Введите количество";
         } else {
