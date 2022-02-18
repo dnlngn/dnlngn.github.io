@@ -30,7 +30,6 @@ function hiden() {
 }
 function calc2() {
         let p, c, r, ch, a;
-        let res = 0;
         p = document.getElementById('prod_type');
         c = document.getElementById('count2');
         r = document.getElementsByName('radio');
@@ -41,27 +40,27 @@ function calc2() {
         } else {
             switch (p.value) {
                 case '1':
-                    res = parseInt(c.value) * 2000;
+                    a.innerHTML = "Ответ: " + parseInt(c.value) * 2000;
                     break;
                 case '2':
                     if (r[0].checked) {
-                        res = parseInt(c.value) * 300;
+                        a.innerHTML = "Ответ: " + parseInt(c.value) * 300;
                     }
                     if (r[1].checked) {
-                        res = parseInt(c.value) * 500;
+                        a.innerHTML = "Ответ: " + parseInt(c.value) * 500;
                     }
                     break;
                 case '3':
-                    res = parseInt(c.value) * 1500;
+                    let res = parseInt(c.value) * 1500;
                     if (ch[0].checked) {
                         res += parseInt(c.value) * 1000;
                     }
                     if (ch[1].checked) {
                         res += parseInt(c.value) * 500;
                     }
+                    a.innerHTML = "Ответ: " + res;
                     break;
             }
-            a.innerHTML = res;
         }
     }
 
