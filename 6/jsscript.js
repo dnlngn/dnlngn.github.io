@@ -70,10 +70,10 @@ function calc2() {
     let b = document.getElementById("result");
     b.addEventListener("click", calc);
     document.getElementById("prod_type").addEventListener("click", hiden);
-    document.getElementById("count").addEventListener("change", calc2);
+    document.getElementById("count2").addEventListener("change", calc2);
     document.getElementById("prod").addEventListener("change", calc2);
-    document.getElementById("r1").addEventListener("change", calc2);
-    document.getElementById("r2").addEventListener("change", calc2);
-    document.getElementById("chk1").addEventListener("change", calc2);
-    document.getElementById("chk2").addEventListener("change", calc2);
+    document.getElementById("rad1").addEventListener("change", calc2);
+    document.getElementById("rad2").addEventListener("change", calc2);
+    document.getElementById("ch1").addEventListener("change", calc2);
+    document.getElementById("ch2").addEventListener("change", calc2);
   });
