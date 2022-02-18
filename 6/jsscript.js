@@ -11,9 +11,9 @@ function calc() {
 }
 
 function hiden() {
-    let prod;
-    prod = document.getElementById('prod').value;
-    switch (prod) {
+    let p;
+    p = document.getElementById('prod_type').value;
+    switch (p) {
         case'1':
             document.getElementById("radio").hidden = true;
             document.getElementById("checkbox").hidden = true;
@@ -29,39 +29,39 @@ function hiden() {
     }
 }
 function calc2() {
-        let prod, count, checkbox, radio, answer;
-        let result = 0;
-        prod = document.getElementById('prod').value;
-        count = parseInt(document.getElementById('count2').value);
-        checkbox = document.getElementsByName('checkbox');
-        radio = document.getElementsByName('radio');
-        answer = document.getElementById('answer2');
-        if (!(/^[1-9][0-9]*$/).test(count) || (count < 0)) {
-            answer.innerHTML = "Некорректное количество";
+        let p, c, ch, r, a;
+        let res = 0;
+        p = document.getElementById('prod_type');
+        c = document.getElementById('count2');
+        ch = document.getElementsByName('checkbox');
+        r = document.getElementsByName('radio');
+        a = document.getElementById('answer2');
+        if (!(/^[1-9][0-9]*$/).test(c.value)) {
+            a.innerHTML = "Некорректное количество";
         } else {
-            switch (prod) {
+            switch (p.value) {
                 case '1':
-                    result = count * 300;
+                    result = parseInt(c.value) * 2000;
                     break;
                 case '2':
-                    if (radio[0].checked) {
-                        result = count * 100;
+                    if (r[0].checked) {
+                        result = parseInt(c.value) * 300;
                     }
-                    if (radio[1].checked) {
-                        result = count * 7000;
+                    if (r[1].checked) {
+                        result = parseInt(c.value) * 500;
                     }
                     break;
                 case '3':
-                    result = count * 400;
-                    if (checkbox[0].checked) {
-                        result += count * 200;
+                    res = parseInt(c.value) * 1500;
+                    if (ch[0].checked) {
+                        res += parseInt(c.value) * 1000;
                     }
-                    if (checkbox[1].checked) {
-                        result += count * 100;
+                    if (ch[1].checked) {
+                        res += parseInt(c.value) * 500;
                     }
                     break;
             }
-            answer.innerHTML = result + " руб.";
+            a.innerHTML = res;
         }
     }
 
@@ -69,7 +69,7 @@ function calc2() {
     console.log("DOM fully loaded and parsed");
     let b = document.getElementById("result");
     b.addEventListener("click", calc);
-    document.getElementById("prod").addEventListener("click", hiden);
+    document.getElementById("prod_type").addEventListener("click", hiden);
     document.getElementById("count").addEventListener("change", calc2);
     document.getElementById("prod").addEventListener("change", calc2);
     document.getElementById("r1").addEventListener("change", calc2);
