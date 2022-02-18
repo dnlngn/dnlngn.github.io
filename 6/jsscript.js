@@ -41,14 +41,14 @@ function calc2() {
         } else {
             switch (p.value) {
                 case '1':
-                    result = parseInt(c.value) * 2000;
+                    res = parseInt(c.value) * 2000;
                     break;
                 case '2':
                     if (r[0].checked) {
-                        result = parseInt(c.value) * 300;
+                        res = parseInt(c.value) * 300;
                     }
                     if (r[1].checked) {
-                        result = parseInt(c.value) * 500;
+                        res = parseInt(c.value) * 500;
                     }
                     break;
                 case '3':
